@@ -8,4 +8,5 @@ RUN source activate rapids \
   && apt-get -y install gcc \
   && pip install napari-lazy-openslide \
   && pip install cucim \
+  && pip install termcolor \
   && conda install -c bioconda openslide
