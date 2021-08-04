@@ -22,7 +22,8 @@ https://drive.google.com/file/d/10IUHPUPlU4FcKLU9pUO9UEdTG30zigk0/view?usp=shari
 https://drive.google.com/file/d/1ILpogNHhWjraYAZMalAx11MXy5D8h7W7/view?usp=sharing
 
 cd docker_build
-docker build wsi_demo:v1 .
+
+docker build -t wsi_demo:v1 .
  
 You can then run the container that this builds:
 docker run –gpus all –rm -it –ipc=host -p 8808:8888 -v [absolute path to current folder]:notebooks wsi_demo:v1
