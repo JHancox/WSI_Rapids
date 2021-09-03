@@ -35,5 +35,5 @@ This should make the folder appear in Jupyter
 
 Once this is done, you should be able to simply browse to the jupyter lab using localhost:8808/lab
 
-Load WDI_Dask_Notebook.ipynb to threshold the WSI and feature-encode it
+Load WSI_Dask_Notebook.ipynb to threshold the WSI and feature-encode it
 Load WSI_cugraph.ipynb to analyse the features with RAPIDS
