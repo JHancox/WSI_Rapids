@@ -21,16 +21,21 @@ https://drive.google.com/file/d/10IUHPUPlU4FcKLU9pUO9UEdTG30zigk0/view?usp=shari
 * wsi_dfx - a dataframe containing tile features.
 https://drive.google.com/file/d/1ILpogNHhWjraYAZMalAx11MXy5D8h7W7/view?usp=sharing
 
-cd docker_build
+`cd docker_build`
 
-docker build -t wsi_demo:v1 .
+`docker build -t wsi_demo:v1 .`
  
-You can then run the container that this builds:
-docker run –gpus all –rm -it –ipc=host -p 8808:8888 -v [absolute path to current folder]:notebooks wsi_demo:v1
+You can then run the container that this builds after returning to the root folder:
+
+`cd ..`
+
+`docker run –gpus all –rm -it –ipc=host -p 8808:8888 -v [absolute path to current folder]:notebooks wsi_demo:v1`
 
 The host folder should appear as 'notebooks' in the container, which means you can load and save things easily from the container.
 create a symlink: 
-ln -s /notebooks notebooks
+
+`ln -s /notebooks notebooks`
+
 This should make the folder appear in Jupyter
 
 Once this is done, you should be able to simply browse to the jupyter lab using localhost:8808/lab
